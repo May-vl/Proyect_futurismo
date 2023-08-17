@@ -4,8 +4,16 @@
     margin: 0;
     padding: 0;
 }
+/* body {
+    width: 100%;
+    font-family: 'Sulphur Point', sans-serif;
+    background-color: #f6f0f0;
+} */
+header {
+    width: 100%;
+}
 
-.contenedor{
+.contenedor {
     margin: auto;
     font-family: sans-serif, arial;
     overflow: hidden;
@@ -101,7 +109,7 @@ button {
 }
 
 /*Estilos del div de busqueda*/
-/* .busqueda{
+.busqueda{
     padding-top: 100px;
     padding-left: 50px;
     padding-right: 50px;
@@ -138,7 +146,7 @@ button {
     font-size: 20px;
 }
 .search-box button img {
-    width: 25px;
+    width: 20px;
 
 }
 .search-box button {
@@ -147,7 +155,7 @@ button {
     outline: 0;
     background: transparent;
     cursor: pointer;
-} */
+}
 
 
 /*Estilos de las Imagenes dentro del la barra de busqueda*/
@@ -182,7 +190,7 @@ button {
     position: relative;
     transform: translate(0%,0%);
     width:100%;
-    height:500px;
+    height:400px;
     padding:10px;
     background-color: #f5f5f5;
     box-shadow: 0 30px 50px #dbdbdb;
@@ -190,18 +198,18 @@ button {
 /*Estilos a las imagenes animadas del carrusel*/
 #slide{
     width:max-content;
-    margin-top:50px;
-}
+    margin-top:30px;
+} 
 .item{
     width:200px;
-    height:300px;
+    height:250px;
     background-position: 50% 50%;
     display: inline-block;
     transition: 0.5s;
     background-size: cover;
     position: absolute;
     z-index: 1;
-    top:50%;
+    top:60%;
     transform: translate(0,-50%);
     border-radius: 20px;
     box-shadow:  0 30px 50px #505050;
@@ -256,9 +264,9 @@ button {
     opacity: 0;
     animation:showcontent 1s ease-in-out 0.3s 1 forwards
 }
-.item button{
+.item .content .botonmas {
     padding:10px 20px;
-    border:none;
+    border-radius: 100%;
     opacity: 0;
     animation:showcontent 1s ease-in-out 0.6s 1 forwards
 }
@@ -273,6 +281,7 @@ button {
         filter:blur(0);
     }
 }
+/*ESTILOS APLICADOS A LOS BOTONES DE DESPLAZAMIENTO DE CARRUSEL (DERECHA A IZQUIERDA)*/
 .buttons {
     position: absolute;
     bottom:30px;
@@ -289,8 +298,45 @@ button {
 }.buttons button:hover {
     background-color: #4E0FA6;
 }
+
+.card img {
+    height: 250px;
+}
+
+.hide-overflow {
+    overflow: hidden;
+}
+.caption {
+    position: absolute;
+    top: 130px;
+    padding: 2px;
+    background: #4E0FA6;
+    color: #F3E304;
+    left: 5px;
+    z-index: 1;
+    border-radius: 5px;
+
+}
+
+.place {
+    font-size: 18px;
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: 500px;
+    color: #4E0FA6;
+}
+.card-bodyy {
+    height:fit-content;
+
+}
+.date {
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: 400px;
+    margin-bottom: 2px;
+    text-align: justify;
+    padding-bottom: 10px;
+}
 /* Estilos de lo más buscado*/
-.buscado {
+/*.buscado {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -314,8 +360,11 @@ button {
     width: 250px;
     height: 300px;
     margin: 20px;
-}
+}*/
+
 /*Estilos de la cara de los cards*/
+
+/*
 .card .face {
     position: absolute;
     width: 100%;
@@ -347,8 +396,11 @@ button {
     color: #fff;
     background: #04D9D9;
     text-align: center;
-}
+}*/
+
 /*Estilos de las parte trasera del los cards*/
+
+/*
 .card .back {
     transform: perspective(600px) rotateY(180deg);
     background: #04D9D9;
@@ -388,6 +440,7 @@ button {
 .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
+*/
 
 /*Estilos del slaider infinito de las empresas*/
 .slider-empresas {
@@ -421,13 +474,13 @@ button {
 }
 
 /*Estilos del footer*/
-footer{
+
+footer {
     width: 100%;
     padding: 20px 0px;
     background-color: #04D9D9;
-    background-image: url("../img/background-footer.svg");
+    background-image: url('../img/background-footer.svg');
     background-size: cover;
-    
     background-color: #4E0FA6;
     -webkit-mask-image: url("../img/background-footer.svg");
     mask-image: url("../img/background-footer.svg");
@@ -435,26 +488,27 @@ footer{
     mask-size: cover;
 }
 
-.container__footer{
+.container__footer {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
 }
 
-.box__footer{
+.box__footer {
     display: flex;
     flex-direction: column;
     padding: 40px;
 }
 
-.box__footer .logo img{
+.box__footer .logo img {
     width: 180px;
 }
 
-.box__footer .terms{
+.box__footer .terms {
     max-width: 350px;
     margin-top: 20px;
     font-weight: 500;
@@ -462,40 +516,125 @@ footer{
     font-size: 18px;
 }
 
-.box__footer h2{
-    margin-bottom: 30px;
+.box__footer h2 {
+    margin-bottom: 5px;
     color: #4E0FA6;
     font-weight: 700;
+    font-size: 24px;
 }
 
-.box__footer a{
-    margin-top: 10px;
+.box__footer a {
+    margin-top: 5px;
     color: #04D9D9;
     font-weight: 600;
 }
 
-.box__footer a:hover{
+.box__footer a:hover {
     opacity: 0.8;
+    color:#4E0FA6 ;
 }
 
-.box__footer a .fab{
+.box__footer a .fab {
     font-size: 20px;
 }
 
-.box__copyright{
+.box__copyright {
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 40px;
 }
 
-.box__copyright p{
+.box__copyright p {
     margin-top: 20px;
     color: #4E0FA6;
 }
 
-.box__copyright hr{
+.box__copyright hr {
     border: none;
     height: 1px;
     background-color: #4E0FA6;
+}
+
+/*Estilos del footer*/
+
+@media (max-width: 768px) {
+    /*Media Querys del navbar*/
+    h1{
+        font-size: 20px;
+    }
+    /*Media Querys de cards */
+    .caption{
+        font-size: 12px;
+    }
+    .place{
+        font-size: 16px;
+    }
+    .date{
+        font-size: 14px;
+    }
+    .price{
+        font-size: 14px;
+        width: 100px;
+        margin-bottom: 2px;
+
+    }
+    .cost{
+        font-size: 20px;
+    }
+
+
+    /*Media Querys footer*/
+    .box__footer {
+        padding: 10px;
+    }
+    .box__footer h2 {
+        font-size: 18px;
+    }
+    .box__footer .terms {
+        font-size: 14px;
+    }
+    .box__footer .terms p {
+        margin-bottom: 0px;}
+    .box__footer a {
+        font-size: 14px;
+    } 
+    .box__copyright p {
+        font-size: 12px;
+    }
+    .box__footer .logo img {
+        width: 100px;
+        align-items:center ;
+    }
+    footer {
+        height:auto;
+    }
+}
+@media (max-width:576) {
+    .container__footer .box__footer {
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+}
+
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 56px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    text-decoration: none;
+    background: #fff;
+    color: #20ba5a;
 }

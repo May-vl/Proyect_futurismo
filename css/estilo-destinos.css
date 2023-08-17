@@ -2,7 +2,7 @@ body {
     font-family: 'Sulphur Point', sans-serif;
     background-color: #e0f2f1;
   }
-  /*Navbar*/
+
 
 .nav-color {
   background: #4e0fa6;
@@ -17,8 +17,7 @@ body {
 }
 
 
-/*Navbar*/
-/*Estilos del boton de login y registro*/
+
 .boton {
   display: flex;
   justify-content: center;
@@ -48,17 +47,23 @@ body {
 }
 
 
-
+.cont-cards-1 {
+  margin-left: 20%;
+  margin-right: 20%;
+  
+}
 
 .container {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 50px;
+    width: 100%;
+    margin: center;
+    margin-top: 8em;
 }
-  
+.container_cards{
+  display: flex;
+}
 .form-container {
-    background-color: #04D9D9;
-    padding: 30px;
+    background-color: #99eded;
+    padding: 10px;
     border-radius: 10px;
     text-align: center;
 }
@@ -70,6 +75,7 @@ body {
 h2 {
     color: #4E0FA6;
     margin-bottom: 30px;
+    font-size: 55px;
 }
   
 label {
@@ -96,12 +102,12 @@ input[type="date"] {
   background-color: #4E0FA6;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 5px;
   font-size: 16px;
 }
   
-.promo-text-AQP {
+/* .promo-text-AQP {
   font-size: 36px;
   font-weight: bold;
   color: #ff4081; 
@@ -139,4 +145,59 @@ input[type="date"] {
   color: #ff4081; 
   text-align: center;
   margin: 20px 0;
+} */
+
+box {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e6e6e6;
+}
+
+.box {
+  width: 80%;
+  max-width: 90%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #d1c1eb;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box p {
+  color: #fff;
+  margin: 0;
+  font-size: 50px;
+  line-height: 1.5;
+}
+
+.important {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.input-container button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 1px 1px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
